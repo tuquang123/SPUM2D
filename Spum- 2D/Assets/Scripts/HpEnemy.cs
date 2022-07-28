@@ -11,10 +11,10 @@ public class HpEnemy : MonoBehaviour
 	public void TakeDamage(int damage)
 	{
 		health -= damage;
+		Debug.Log("dame");
 		if (health <= 0)
 		{
 			Die();
-			Debug.Log("dame");
 		}
 	}
 	void Die()
