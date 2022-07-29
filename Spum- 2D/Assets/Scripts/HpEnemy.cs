@@ -7,6 +7,8 @@ public class HpEnemy : MonoBehaviour
 	public int health = 10;
 	public Animator anm;
 	public GameObject deathEffect;
+	
+	private static readonly int Dead = Animator.StringToHash("dead");
 
 	public void TakeDamage(int damage)
 	{
@@ -19,7 +21,7 @@ public class HpEnemy : MonoBehaviour
 	}
 	void Die()
 	{
-		anm.SetTrigger("dead");
+		anm.SetTrigger(Dead);
 		//Instantiate(deathEffect, transform.position, Quaternion.identity);
 		//Destroy(gameObject);
 	}

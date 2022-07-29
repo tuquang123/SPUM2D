@@ -4,15 +4,25 @@ using UnityEngine;
 
 public class HpPlayer : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public int health = 10;
+    public Animator anm;
+    private static readonly int Dead = Animator.StringToHash("dead");
 
-    // Update is called once per frame
-    void Update()
+    public void TakeDamage(int damage)
     {
-        
+        health -= damage;
+        Debug.Log("dameE");
+        if (health <= 0)
+        {
+            Die();
+        }
+    }
+    void Die()
+    {
+        anm.SetTrigger(Dead);
+    }
+    private void Destroy()
+    {
+        Destroy(gameObject);
     }
 }
