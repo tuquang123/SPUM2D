@@ -1,25 +1,26 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class AttackPlayer : MonoBehaviour
 {
     public Animator animator;
-    public Transform AttackPoint;
+    public Transform attackPoint;
     public LayerMask enemyLayers;
 
-
-
+    
     public int damage = 2;
     public float attackRage = 0.5f;
     public float attackRate = 2f;
     float nextAttackTime = 0f;
+    private static readonly int Att1 = Animator.StringToHash("att");
 
     void Update()
     {
         if (Time.time >= nextAttackTime)
         {
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetKeyDown(KeyCode.Mouse0))
             {
                 AttAnimation();
                 Att();
@@ -32,13 +33,14 @@ public class AttackPlayer : MonoBehaviour
     void AttAnimation()
     {
         //play attack animation
-        animator.SetTrigger("att");
+        animator.SetTrigger(Att1);
     }
 
+    // ReSharper disable Unity.PerformanceAnalysis
     void Att()
     {
         //Nhan dien enemy va attack
-        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(AttackPoint.position, attackRage, enemyLayers);
+        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRage, enemyLayers);
 
         //dame them
         foreach (Collider2D enemy in hitEnemies)
@@ -51,9 +53,9 @@ public class AttackPlayer : MonoBehaviour
     // draw radius att
     void OnDrawGizmosSelected()
     {
-        if (AttackPoint == null)
+        if (attackPoint == null)
             return;
-        Gizmos.DrawWireSphere(AttackPoint.position, attackRage);
+        Gizmos.DrawWireSphere(attackPoint.position, attackRage);
     }
 
 }
