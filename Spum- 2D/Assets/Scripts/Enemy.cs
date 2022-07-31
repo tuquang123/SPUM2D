@@ -20,6 +20,8 @@ public class Enemy : MonoBehaviour
     public float attackRage = 0.5f;
     public Transform attackPoint;
     public LayerMask enemyLayers;
+
+    public Vector3 targetDir;
     void Attack()
     {
         //Nhan dien enemy va attack
@@ -32,6 +34,16 @@ public class Enemy : MonoBehaviour
         }
 
     }
+    private void Turning()
+    {
+        if (target == null) return;
+        //if (turnOff)
+        {
+            targetDir = target.position - transform.position;
+            Transform charTrans = transform;
+            charTrans.transform.localScale = new Vector3(Mathf.Sign(-targetDir.x), 1, 1);
+        }
+    }
     // draw radius att
     void OnDrawGizmosSelected()
     {
@@ -41,6 +53,7 @@ public class Enemy : MonoBehaviour
     }
     private void FixedUpdate()
     {
+        Turning();
         if (target == null)
         {
             anm.SetBool(Run, false);
