@@ -14,7 +14,7 @@ public class Bullet : MonoBehaviour
 
     private void Awake()
     {
-        transform.Rotate(0,0,-90);
+        //transform.Rotate(0,0,-90);
     }
 
     private void Start()
