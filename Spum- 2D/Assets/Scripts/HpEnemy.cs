@@ -21,9 +21,9 @@ public class HpEnemy : MonoBehaviour
 	}
 	void Die()
 	{
-		anm.SetTrigger(Dead);
-		//Instantiate(deathEffect, transform.position, Quaternion.identity);
-		//Destroy(gameObject);
+		//anm.SetTrigger(Dead);
+		Instantiate(deathEffect, transform.position, Quaternion.identity);
+		Destroy(gameObject);
 	}
     private void Destroy()
     {

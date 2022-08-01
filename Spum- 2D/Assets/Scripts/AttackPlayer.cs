@@ -5,6 +5,7 @@ using UnityEngine.Serialization;
 
 public class AttackPlayer : MonoBehaviour
 {
+    public GameObject att;
     public Animator animator;
     public Transform attackPoint;
     public LayerMask enemyLayers;
@@ -23,8 +24,10 @@ public class AttackPlayer : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Mouse0))
             {
                 AttAnimation();
-                Att();
+                //Att();
                 nextAttackTime = Time.time + 1f / attackRate;
+                var bul =  Instantiate(att, transform.position, Quaternion.identity);
+                bul.transform.parent = gameObject.transform;
 
             }
         }
