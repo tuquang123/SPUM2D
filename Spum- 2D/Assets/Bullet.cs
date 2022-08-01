@@ -41,6 +41,7 @@ public class Bullet : MonoBehaviour
             {
                 enemy.TakeDamage(damage);
                 Instantiate(bullet,transform.position,Quaternion.identity);
+                Destroy(gameObject);
             }
         }
     }
