@@ -20,7 +20,7 @@ public class HpEnemy : MonoBehaviour
 		{
 			Die();
 		}
-		Invoke(nameof(NoHurt),0.3f);
+		Invoke(nameof(NoHurt),0.5f);
 		
 	}
 	void NoHurt()
