@@ -140,7 +140,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be280542b28446a49aff1ebbf4e651dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 5
+  health: 10
   anm: {fileID: 6384905345969448110}
   deathEffect: {fileID: 3973073466755695825, guid: f3e620813aa3f9d4aa534b0bb9dfb1c6, type: 3}
 --- !u!50 &1944113056600144856
@@ -176,7 +176,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b171756a491f45d09efa8829b0cd1a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hpEnemy: {fileID: 1944113056600144858}
   anm: {fileID: 6384905345969448110}
   speed: 1
   target: {fileID: 0}
