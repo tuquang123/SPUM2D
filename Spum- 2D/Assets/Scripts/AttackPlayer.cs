@@ -24,10 +24,10 @@ public class AttackPlayer : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Mouse0))
             {
                 AttAnimation();
-                //Att();
+                Att();
                 nextAttackTime = Time.time + 1f / attackRate;
-                var bul =  Instantiate(att, transform.position, Quaternion.identity);
-                bul.transform.parent = gameObject.transform;
+                //var bul =  Instantiate(att, transform.position, Quaternion.identity);
+                //bul.transform.parent = gameObject.transform;
 
             }
         }

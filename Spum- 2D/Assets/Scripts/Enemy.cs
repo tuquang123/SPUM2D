@@ -6,7 +6,7 @@ public class Enemy : MonoBehaviour
 {
     public Animator anm;
     private  Rigidbody rb;
-    public float speed = 5f;
+    public float speed = 3f;
     public Transform target;
 
     public float minimumDistance;
