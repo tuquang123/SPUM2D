@@ -21,7 +21,7 @@ public class AttackPlayer : MonoBehaviour
     {
         if (Time.time >= nextAttackTime)
         {
-            if (Input.GetKeyDown(KeyCode.Mouse0))
+            //if (Input.GetKeyDown(KeyCode.Mouse0))
             {
                 AttAnimation();
                 Att();

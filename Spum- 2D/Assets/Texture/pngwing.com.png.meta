@@ -66,7 +66,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 256
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -102,6 +102,30 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -947,7 +971,7 @@ TextureImporter:
     nameFileIdTable:
       pngwing.com_17: -1743678604
       pngwing.com_9: 1444730964
-      pngwing.com_23: 2133994406
+      pngwing.com_28: -307609787
       pngwing.com_37: -236707798
       pngwing.com_26: 1517910898
       pngwing.com_29: 905433765
@@ -982,7 +1006,7 @@ TextureImporter:
       pngwing.com_19: -1835198516
       pngwing.com_24: 664429357
       pngwing.com_6: -166956727
-      pngwing.com_28: -307609787
+      pngwing.com_23: 2133994406
       pngwing.com_20: 1289509525
   spritePackingTag: 
   pSDRemoveMatte: 0

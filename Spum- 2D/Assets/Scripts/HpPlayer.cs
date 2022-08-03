@@ -6,8 +6,8 @@ public class HpPlayer : MonoBehaviour
 {
     public int health = 10;
     public Animator anm;
+    
     private static readonly int Dead = Animator.StringToHash("dead");
-
     private static readonly int Hurt = Animator.StringToHash("hurt");
     public void TakeDamage(int damage)
     {
@@ -18,7 +18,7 @@ public class HpPlayer : MonoBehaviour
         {
             Die();
         }
-        Invoke(nameof(NoHurt),0.5f);
+        Invoke(nameof(NoHurt),0.3f);
     }
     void NoHurt()
     {

@@ -5,7 +5,6 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     public Animator anm;
-    private  Rigidbody rb;
     public float speed = 3f;
     public Transform target;
 
@@ -14,14 +13,14 @@ public class Enemy : MonoBehaviour
     private static readonly int Att = Animator.StringToHash("att");
     
     public float attackRate = 1f;
-    public float nextAttackTime = 0f;
+    [HideInInspector]public float nextAttackTime = 0f;
     
     public int damage = 1;
     public float attackRage = 0.5f;
     public Transform attackPoint;
     public LayerMask enemyLayers;
 
-    public Vector3 targetDir;
+    [HideInInspector]public Vector3 targetDir;
     void Attack()
     {
         //Nhan dien enemy va attack
