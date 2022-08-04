@@ -2092,9 +2092,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be280542b28446a49aff1ebbf4e651dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemy: {fileID: 0}
+  FloatTextPrefab: {fileID: 0}
+  deathEffect: {fileID: 3973073466755695825, guid: f3e620813aa3f9d4aa534b0bb9dfb1c6, type: 3}
+  fx: {fileID: 0}
   health: 10
   anm: {fileID: 5338299092271279130}
-  deathEffect: {fileID: 3973073466755695825, guid: f3e620813aa3f9d4aa534b0bb9dfb1c6, type: 3}
 --- !u!114 &4720347653248735009
 MonoBehaviour:
   m_ObjectHideFlags: 0
