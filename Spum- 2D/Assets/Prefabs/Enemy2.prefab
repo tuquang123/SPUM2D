@@ -2041,7 +2041,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4665098888793027568}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -2092,10 +2092,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be280542b28446a49aff1ebbf4e651dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 0}
-  FloatTextPrefab: {fileID: 0}
+  enemy: {fileID: 4720347653248735009}
+  FloatTextPrefab: {fileID: 8052757477912707586, guid: 38a787a4672635a4286f57653dbb404b, type: 3}
   deathEffect: {fileID: 3973073466755695825, guid: f3e620813aa3f9d4aa534b0bb9dfb1c6, type: 3}
-  fx: {fileID: 0}
+  fx: {fileID: 3360738921439869729, guid: eb517a57eac4644c983c49953f73e8c4, type: 3}
   health: 10
   anm: {fileID: 5338299092271279130}
 --- !u!114 &4720347653248735009

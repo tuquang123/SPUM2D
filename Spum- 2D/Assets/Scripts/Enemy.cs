@@ -21,7 +21,7 @@ public class Enemy : MonoBehaviour
     public LayerMask enemyLayers;
 
     [HideInInspector]public Vector3 targetDir;
-    void Attack()
+    public void Attack()
     {
         //Nhan dien enemy va attack
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRage, enemyLayers);
@@ -71,7 +71,7 @@ public class Enemy : MonoBehaviour
                 {
                     anm.SetBool(Run, false);
                     AttackAnimation();
-                    Attack();
+                    //Attack();
                     nextAttackTime = Time.time + 1f / attackRate;
                 }
             }

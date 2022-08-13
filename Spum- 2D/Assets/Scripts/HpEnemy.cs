@@ -57,12 +57,12 @@ public class HpEnemy : MonoBehaviour
 		{
 			Die();
 		}
-		Invoke(nameof(NoHurt),1.1f);
+		Invoke(nameof(NoHurt),1f);
 		
 		enemy.speed = 0;
 		if (FloatTextPrefab && health > 0)
 		{
-			ShowFloatingText(damage.ToString());
+			//ShowFloatingText(damage.ToString());
 		}
 	}
 	void NoHurt()

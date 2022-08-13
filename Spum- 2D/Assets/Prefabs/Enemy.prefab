@@ -140,7 +140,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be280542b28446a49aff1ebbf4e651dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FloatTextPrefab: {fileID: 8299926770623932012, guid: ab9b70df3bdee7e498145297f390c5fc, type: 3}
+  enemy: {fileID: 6967306958961282193}
+  FloatTextPrefab: {fileID: 8052757477912707586, guid: 38a787a4672635a4286f57653dbb404b, type: 3}
   deathEffect: {fileID: 3973073466755695825, guid: f3e620813aa3f9d4aa534b0bb9dfb1c6, type: 3}
   fx: {fileID: 3360738921439869729, guid: eb517a57eac4644c983c49953f73e8c4, type: 3}
   health: 10
