@@ -8,7 +8,6 @@ public class Move : MonoBehaviour
     public float speed = 5f;
     public Rigidbody2D rb;
     public Animator anm;
-
     private Vector2 movement;
     private static readonly int Run = Animator.StringToHash("run");
     bool facingRight;
