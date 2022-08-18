@@ -9,6 +9,7 @@ public class Move : MonoBehaviour
     public Rigidbody2D rb;
     public Animator anm;
     private Vector2 movement;
+    
     private static readonly int Run = Animator.StringToHash("run");
     bool facingRight;
 
@@ -20,7 +21,7 @@ public class Move : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rb.MovePosition(rb.position + movement * (speed * Time.fixedDeltaTime));
+        rb.MovePosition(rb.position + movement * ((speed + Inventory.Instance.shoes) * Time.fixedDeltaTime));
         if (movement.x > 0 && !facingRight)
         {
             Flip();

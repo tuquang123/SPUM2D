@@ -10,16 +10,9 @@ public class Bullet : MonoBehaviour
     public int damage = 1;
     private Vector3 targetPosition;
     public float speed = 5;
-    //public GameObject deathEffect;
-
-    private void Awake()
-    {
-        //transform.Rotate(0,0,-90);
-    }
-
+    
     private void Start()
     {
-        //Destroy(gameObject, 10f);
         targetPosition = FindObjectOfType<HpEnemy>().transform.position;
     }
     private void Update()
@@ -30,7 +23,6 @@ public class Bullet : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        
     }
     private void OnTriggerEnter2D(Collider2D other)
     {

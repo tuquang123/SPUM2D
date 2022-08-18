@@ -1,22 +1,29 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class HpPlayer : MonoBehaviour
 {
+    public HPBar hPBar;
     public GameObject fxDead;
     public int health = 10;
     int currentHealth;
-    public HPBar hPBar;
-    Animator anm;
     
-    private static readonly int Dead = Animator.StringToHash("dead");
     private void Start()
     {
-        anm = GetComponent<Animator>();
         currentHealth = health;
         hPBar.SetMaxHealth(health);
     }
+
+    private void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.CompareTag("Enemy"))
+        {
+            TakeDamage(2);
+        }
+    }
+
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;

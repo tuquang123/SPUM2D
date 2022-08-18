@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,7 +9,12 @@ public class Enemy : MonoBehaviour
     public Transform target;
     public float minimumDistance;
     [HideInInspector]public Vector3 targetDir;
-    
+
+    private void Awake()
+    {
+        target.transform.position = FindObjectOfType<Move>().transform.position;
+    }
+
     private void Turning()
     {
         if (target == null) return;

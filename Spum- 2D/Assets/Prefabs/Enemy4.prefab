@@ -555,12 +555,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be280542b28446a49aff1ebbf4e651dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 0}
-  FloatTextPrefab: {fileID: 8052757477912707586, guid: 38a787a4672635a4286f57653dbb404b, type: 3}
   deathEffect: {fileID: 3973073466755695825, guid: f3e620813aa3f9d4aa534b0bb9dfb1c6, type: 3}
-  fx: {fileID: 3360738921439869729, guid: eb517a57eac4644c983c49953f73e8c4, type: 3}
-  health: 10
-  anm: {fileID: 3009424067750763437}
+  health: 8
 --- !u!114 &5756093534590521923
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -573,18 +569,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b171756a491f45d09efa8829b0cd1a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anm: {fileID: 3009424067750763437}
   speed: 0.5
-  target: {fileID: 0}
+  target: {fileID: 5516444538659255907, guid: 9247e7f84d2224b3bb635bfd3cd6f6db, type: 3}
   minimumDistance: 1
-  attackRate: 0.5
-  nextAttackTime: 0
-  damage: 1
-  attackRage: 0.7
-  attackPoint: {fileID: 5756093536142591424}
-  enemyLayers:
-    serializedVersion: 2
-    m_Bits: 64
   targetDir: {x: 0, y: 0, z: 0}
 --- !u!1 &1033253217539834580
 GameObject:

@@ -140,12 +140,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be280542b28446a49aff1ebbf4e651dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 6967306958961282193}
-  FloatTextPrefab: {fileID: 8052757477912707586, guid: 38a787a4672635a4286f57653dbb404b, type: 3}
+  gem: {fileID: 4671354774057595117, guid: 2f7f28c9cf02e40f99b1d0bf97892e09, type: 3}
   deathEffect: {fileID: 3973073466755695825, guid: f3e620813aa3f9d4aa534b0bb9dfb1c6, type: 3}
-  fx: {fileID: 3360738921439869729, guid: eb517a57eac4644c983c49953f73e8c4, type: 3}
-  health: 10
-  anm: {fileID: 6384905345969448110}
+  health: 1
 --- !u!50 &1944113056600144856
 Rigidbody2D:
   serializedVersion: 4
@@ -179,18 +176,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b171756a491f45d09efa8829b0cd1a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anm: {fileID: 6384905345969448110}
-  speed: 0.5
-  target: {fileID: 0}
+  speed: 1
+  target: {fileID: 5516444538659255907, guid: 9247e7f84d2224b3bb635bfd3cd6f6db, type: 3}
   minimumDistance: 1
-  attackRate: 0.5
-  nextAttackTime: 0
-  damage: 1
-  attackRage: 0.7
-  attackPoint: {fileID: 1915537260}
-  enemyLayers:
-    serializedVersion: 2
-    m_Bits: 64
   targetDir: {x: 0, y: 0, z: 0}
 --- !u!1 &34250154591058854
 GameObject:
