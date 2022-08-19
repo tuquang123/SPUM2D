@@ -20991,7 +20991,7 @@ MonoBehaviour:
   shoes: 0
   exp: 0
   darts: 0
-  suriken: 0
+  suriken: 4
 --- !u!4 &227023628
 Transform:
   m_ObjectHideFlags: 0
@@ -34026,6 +34026,10 @@ PrefabInstance:
       propertyPath: finalBullet
       value: 
       objectReference: {fileID: 1197776148149278193, guid: 9c43a1f74534745f3a95e9ff7e96ecbf, type: 3}
+    - target: {fileID: 7619002496077117212, guid: 9247e7f84d2224b3bb635bfd3cd6f6db, type: 3}
+      propertyPath: health
+      value: 1000000
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9247e7f84d2224b3bb635bfd3cd6f6db, type: 3}
 --- !u!61 &8521842190601813035
