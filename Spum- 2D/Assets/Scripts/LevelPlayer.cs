@@ -9,32 +9,11 @@ public class LevelPlayer : MonoBehaviour
     public int level = 1;
     public int maxExp = 10;
     public int exp;
-    
-    //collision 
-    private void OnTriggerEnter2D(Collider2D col)
-    {
-        if (col.CompareTag("Gem"))
-        {
-            Destroy(col.gameObject);
-            exp++;
-        }
-        if (col.CompareTag("Gold"))
-        {
-            Destroy(col.gameObject);
-            Inventory.Instance.gold++;
-        }
-        if (col.CompareTag("Hp"))
-        {
-            Destroy(col.gameObject);
-            HpPlayer hp = GetComponent<HpPlayer>();
-            hp.currentHealth++;
-        }
-    }
     private void Update()
     {
         if (exp == maxExp)
         {
-            level++;
+            level += Inventory.Instance.exp;
             maxExp++;
             exp = 0;
             
