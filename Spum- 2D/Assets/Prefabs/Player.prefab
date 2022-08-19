@@ -3305,7 +3305,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.80625856, y: 4.9099994}
+  m_AnchoredPosition: {x: -4.863745, y: 0.68000007}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &961853113736196218
@@ -4495,6 +4495,7 @@ MonoBehaviour:
   hPBar: {fileID: 7239893593365075803}
   fxDead: {fileID: 3973073466755695825, guid: f3e620813aa3f9d4aa534b0bb9dfb1c6, type: 3}
   health: 100
+  currentHealth: 0
 --- !u!114 &7619002496077117202
 MonoBehaviour:
   m_ObjectHideFlags: 0

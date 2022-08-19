@@ -8,7 +8,7 @@ public class HpPlayer : MonoBehaviour
     public HPBar hPBar;
     public GameObject fxDead;
     public int health = 10;
-    int currentHealth;
+    public int currentHealth;
     
     private void Start()
     {
