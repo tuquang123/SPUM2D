@@ -7,9 +7,9 @@ using UnityEngine.UIElements;
 public class Bullet : MonoBehaviour
 {
     public GameObject bullet;
-    public int damage = 1;
+    public int damage;
     private Vector3 targetPosition;
-    public float speed = 5;
+    public float speed;
     
     private void Start()
     {

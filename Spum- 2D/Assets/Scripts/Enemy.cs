@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    public float speed = 3f;
+    public float speed;
     public Transform target;
     public float minimumDistance;
     [HideInInspector]public Vector3 targetDir;

@@ -142,7 +142,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gem: {fileID: 4671354774057595117, guid: 2f7f28c9cf02e40f99b1d0bf97892e09, type: 3}
   deathEffect: {fileID: 3973073466755695825, guid: f3e620813aa3f9d4aa534b0bb9dfb1c6, type: 3}
-  health: 1
+  floatingDame: {fileID: 8084653580894143554, guid: b3bb6b2670f75514785d25e5e5019fef, type: 3}
+  health: 2
 --- !u!50 &1944113056600144856
 Rigidbody2D:
   serializedVersion: 4
@@ -3411,7 +3412,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -4.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &4583601048729925891
