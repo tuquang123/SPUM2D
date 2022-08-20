@@ -2092,6 +2092,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be280542b28446a49aff1ebbf4e651dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gem: {fileID: 4671354774057595117, guid: 2f7f28c9cf02e40f99b1d0bf97892e09, type: 3}
   deathEffect: {fileID: 3973073466755695825, guid: f3e620813aa3f9d4aa534b0bb9dfb1c6, type: 3}
   health: 2
 --- !u!114 &4720347653248735009

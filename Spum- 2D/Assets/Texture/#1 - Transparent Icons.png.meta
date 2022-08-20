@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 48
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -7208,7 +7208,6 @@ TextureImporter:
       '#1 - Transparent Icons_176': 1095836038
       '#1 - Transparent Icons_209': -774759394
       '#1 - Transparent Icons_277': 284555784
-      '#1 - Transparent Icons_328': 792413933
       '#1 - Transparent Icons_151': 829847952
       '#1 - Transparent Icons_50': -887353600
       '#1 - Transparent Icons_29': 1385078309
@@ -7527,6 +7526,7 @@ TextureImporter:
       '#1 - Transparent Icons_298': 166197695
       '#1 - Transparent Icons_68': -575580840
       '#1 - Transparent Icons_312': 463699534
+      '#1 - Transparent Icons_328': 792413933
       '#1 - Transparent Icons_48': -158132708
       '#1 - Transparent Icons_179': -1885988728
       '#1 - Transparent Icons_153': 875550956
