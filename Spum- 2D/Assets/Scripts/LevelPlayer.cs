@@ -18,19 +18,18 @@ public class LevelPlayer : MonoBehaviour
     {
         if (exp > maxExp)
         {
-            level= Inventory.Instance.exp;
-            maxExp++;
+            level++;
+            maxExp += 10;
             exp = 0;
             
             selectItemPanel.SetActive(true);
-            //Time.timeScale = 0;
+            Time.timeScale = 0;
         }
     }
     //call to button 
     public void ContinueGame()
     {
-        //Time.timeScale = 1;
+        Time.timeScale = 1;
         selectItemPanel.SetActive(false);
-        //UpLevel();
     }
 }

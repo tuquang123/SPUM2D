@@ -8,7 +8,8 @@ public class EnemyManager : MonoBehaviour
 {
     public int minX, maxX;
     public int minY, maxY;
-    public GameObject enemy;
+    public GameObject[] listEnemy;
+    public LevelPlayer LevelPlayer;
     private float randx, randy;
     public float spawnRate;
     Vector2 whereToSpawn;
@@ -21,9 +22,12 @@ public class EnemyManager : MonoBehaviour
             nextSpawn = Time.time + spawnRate;
             randx = Random.Range(minX, maxX);
             randy = Random.Range(minY, maxY);
-            whereToSpawn = new Vector2(randx,randy);
-            Instantiate(enemy, whereToSpawn, Quaternion.identity,transform);
+            whereToSpawn = new Vector2(randx, randy);
+            Instantiate(listEnemy[0], whereToSpawn, Quaternion.identity);
+            if (LevelPlayer.level > 1)
+            {
+                Instantiate(listEnemy[Random.Range(0, 4)], whereToSpawn, Quaternion.identity);
+            }
         }
     }
 }
-
