@@ -29,7 +29,8 @@ public class EnemyManager : MonoBehaviour
             randx = Random.Range(minX, maxX);
             randy = Random.Range(minY, maxY);
             whereToSpawn = new Vector2(randx, randy);
-            Instantiate(listEnemy[0], whereToSpawn, Quaternion.identity,transform);
+            var bull = Instantiate(listEnemy[0], whereToSpawn, Quaternion.identity,transform);
+            //bull.GetComponent<HpEnemy>().health++;
             SpawnEnemy();
         }
     }

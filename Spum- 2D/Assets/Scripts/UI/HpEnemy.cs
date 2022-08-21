@@ -6,13 +6,13 @@ public class HpEnemy : MonoBehaviour
 {
 	public GameObject gem;
 	public GameObject deathEffect;
-	public GameObject attackEffect;
+	//public GameObject attackEffect;
 	public GameObject floatingDame;
 	public int health = 10;
 	public void TakeDamage(int damage)
 	{
 		ShowDame(damage.ToString());
-		Instantiate(attackEffect, transform.position, Quaternion.identity);
+		//Instantiate(attackEffect, transform.position, Quaternion.identity);
 		health -= damage;
 		if (health <= 0)
 		{
