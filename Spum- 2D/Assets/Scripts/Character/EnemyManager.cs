@@ -29,7 +29,7 @@ public class EnemyManager : MonoBehaviour
             randx = Random.Range(minX, maxX);
             randy = Random.Range(minY, maxY);
             whereToSpawn = new Vector2(randx, randy);
-            Instantiate(listEnemy[0], whereToSpawn, Quaternion.identity);
+            Instantiate(listEnemy[0], whereToSpawn, Quaternion.identity,transform);
             SpawnEnemy();
         }
     }
@@ -39,22 +39,22 @@ public class EnemyManager : MonoBehaviour
         if (LevelPlayer.level > 1)
         {
             spawnRate = 0.7f;
-            Instantiate(listEnemy[Random.Range(0, 2)], whereToSpawn, Quaternion.identity);
+            Instantiate(listEnemy[Random.Range(0, 2)], whereToSpawn, Quaternion.identity, transform);
         }
         if (LevelPlayer.level > 2)
         {
             spawnRate = 0.65f;
-            Instantiate(listEnemy[Random.Range(0, 3)], whereToSpawn, Quaternion.identity);
+            Instantiate(listEnemy[Random.Range(0, 3)], whereToSpawn, Quaternion.identity,transform);
         }
         if (LevelPlayer.level > 3)
         {
             spawnRate = 0.6f;
-            Instantiate(listEnemy[Random.Range(0, 4)], whereToSpawn, Quaternion.identity);
+            Instantiate(listEnemy[Random.Range(0, 4)], whereToSpawn, Quaternion.identity,transform);
         }
         if (LevelPlayer.level > 4)
         {
             spawnRate = 0.8f;
-            Instantiate(listEnemy[Random.Range(1, 4)], whereToSpawn, Quaternion.identity);
+            Instantiate(listEnemy[Random.Range(1, 4)], whereToSpawn, Quaternion.identity,transform);
             SpawnBoss1();
         }
     }

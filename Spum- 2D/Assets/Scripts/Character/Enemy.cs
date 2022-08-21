@@ -12,7 +12,7 @@ public class Enemy : MonoBehaviour
 
     private void Awake()
     {
-        target.transform.position = FindObjectOfType<Move>().transform.position;
+        target.transform.position = FindObjectOfType<MovePlayer>().transform.position;
     }
 
     private void Turning()
