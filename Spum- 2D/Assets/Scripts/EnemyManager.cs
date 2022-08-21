@@ -26,7 +26,22 @@ public class EnemyManager : MonoBehaviour
             Instantiate(listEnemy[0], whereToSpawn, Quaternion.identity);
             if (LevelPlayer.level > 1)
             {
+                spawnRate = 0.7f;
+                Instantiate(listEnemy[Random.Range(0, 2)], whereToSpawn, Quaternion.identity);
+            }
+            if (LevelPlayer.level > 2)
+            {
+                spawnRate = 0.65f;
+                Instantiate(listEnemy[Random.Range(0, 3)], whereToSpawn, Quaternion.identity);
+            }
+            if (LevelPlayer.level > 3)
+            {
+                spawnRate = 0.55f;
                 Instantiate(listEnemy[Random.Range(0, 4)], whereToSpawn, Quaternion.identity);
+            }
+            if (LevelPlayer.level > 4)
+            {
+                //Instantiate(listEnemy[Random.Range(0, 4)], whereToSpawn, Quaternion.identity);
             }
         }
     }

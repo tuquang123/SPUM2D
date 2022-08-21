@@ -9,7 +9,7 @@ public class HpPlayer : MonoBehaviour
     public GameObject fxDead;
     public int health;
     public int currentHealth;
-    
+
     private void Start()
     {
         currentHealth = health;
