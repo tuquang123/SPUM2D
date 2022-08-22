@@ -24,7 +24,7 @@ public class LevelPlayer : MonoBehaviour
     private void UpLevel()
     {
         levelBar.UpdateLevelBar(exp, maxExp);
-        if (exp > maxExp)
+        if (exp >= maxExp)
         {
             level++;
             maxExp += 10;
