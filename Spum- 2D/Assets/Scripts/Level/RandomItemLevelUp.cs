@@ -18,12 +18,14 @@ public class RandomItemLevelUp : MonoBehaviour
 
     public void SetImg(Sprite sprite)
     {
-        m_button.image.sprite = sprite;
+        m_img.sprite = sprite;
     }
 
     public void SetDescription(String text)
     {
         m_description.text = text;
     }
+    
+    
 }
 
