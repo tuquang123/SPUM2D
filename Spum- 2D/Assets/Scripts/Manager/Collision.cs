@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Collision : MonoBehaviour
 {
+    [SerializeField] private OpenGift m_onpenGift;
+    
+    
     //collision 
     private void OnTriggerEnter2D(Collider2D col)
     {
@@ -23,6 +26,13 @@ public class Collision : MonoBehaviour
             Destroy(col.gameObject);
             HpPlayer hp = GetComponent<HpPlayer>();
             hp.currentHealth++;
+        }
+
+        if (col.CompareTag("Gift"))
+        {
+            Destroy(col.gameObject);
+            m_onpenGift.ShowPanelGift();
+            
         }
     }
 }

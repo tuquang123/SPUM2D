@@ -8,6 +8,8 @@ TagManager:
   - Gem
   - Gold
   - Hp
+  - "G\xECt"
+  - Gift
   layers:
   - Default
   - TransparentFX
