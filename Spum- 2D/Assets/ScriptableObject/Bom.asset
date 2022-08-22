@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11097b04c74ec46e68b907dc0899b35b, type: 3}
+  m_Name: Bom
+  m_EditorClassIdentifier: 
+  name: Bom
+  description: "Th\xEAm 1 bom "
+  level: 0
+  sprite: {fileID: -807517729, guid: b89b32e1e338b714e9d15abd1d4f9ac9, type: 3}
