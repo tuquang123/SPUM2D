@@ -21,4 +21,9 @@ public class Inventory : Singleton<Inventory>
     public int darts = 0;
     [Range(0,4)]
     public int suriken = 0;
+
+    public void AddSuriken()
+    {
+        suriken++;
+    }
 }
