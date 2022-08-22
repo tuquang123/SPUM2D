@@ -11,21 +11,21 @@ public class RandomItemLevelUp : MonoBehaviour
     [SerializeField] private Image m_img;
     [SerializeField] private Text m_description;
 
-    private string name;
+    private string m_name;
 
     public string GetName() => name;
     
-    public System.Action<RandomItemLevelUp> OnClickItem;
+    public static event Action<RandomItemLevelUp> OnClickItem;
 
     private void Start()
     {
         m_img.SetNativeSize();
-        m_button.onClick.AddListener(ClickItemWhenLevelUp);
+                                                                 
     }
 
     public void SetName(string name)
     {
-        name = name;
+        m_name = name;
     }
 
     public void SetImg(Sprite sprite)
