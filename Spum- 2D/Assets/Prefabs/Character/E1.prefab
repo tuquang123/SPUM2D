@@ -3630,6 +3630,8 @@ MonoBehaviour:
   speed: 0.5
   target: {fileID: 6432208137253831770, guid: 9247e7f84d2224b3bb635bfd3cd6f6db, type: 3}
   minimumDistance: 1
+  HpPlayer: {fileID: 6432208137253831774, guid: 9247e7f84d2224b3bb635bfd3cd6f6db, type: 3}
+  Player: {fileID: 0}
   targetDir: {x: 0, y: 0, z: 0}
 --- !u!1 &7633702889333158171
 GameObject:

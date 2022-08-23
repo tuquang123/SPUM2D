@@ -8,11 +8,17 @@ public class Enemy : MonoBehaviour
     public float speed;
     public Transform target;
     public float minimumDistance;
-    [HideInInspector]public Vector3 targetDir;
+    [HideInInspector] public Vector3 targetDir;
 
     private void Awake()
     {
         target.transform.position = FindObjectOfType<MovePlayer>().transform.position;
+    }
+
+    private void FixedUpdate()
+    {
+        Turning();
+        FindTaget();
     }
 
     private void Turning()
@@ -25,23 +31,16 @@ public class Enemy : MonoBehaviour
             charTrans.transform.localScale = new Vector3(Mathf.Sign(-targetDir.x), 1, 1);
         }
     }
-    private void FixedUpdate()
-    {
-        Turning();
-        FindTaget();
-    }
 
     void FindTaget()
     {
         if (target)
         {
-            if (Vector2.Distance(transform.position,target.position) > minimumDistance)//&& check.gg == false)
+            if (Vector2.Distance(transform.position, target.position) > minimumDistance)//&& check.gg == false)
             {
-                
-                transform.position =
-                    Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
+             transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
             }
         }
+        
     }
-    
 }
