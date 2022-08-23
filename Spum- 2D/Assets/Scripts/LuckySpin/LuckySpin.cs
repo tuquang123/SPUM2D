@@ -18,6 +18,7 @@ public class LuckySpin : MonoBehaviour
     {
         m_buttonSpin.onClick.AddListener(() =>
         {
+            Time.timeScale = 1;
             m_buttonSpin.interactable = false;
             m_textSpin.text = "Spinning";
             

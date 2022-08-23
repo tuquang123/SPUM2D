@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Collision : MonoBehaviour
 {
-    [SerializeField] private OpenGift m_onpenGift;
-    
+
+    [SerializeField] private GameObject panelSpin;
     
     //collision 
     private void OnTriggerEnter2D(Collider2D col)
@@ -31,7 +31,9 @@ public class Collision : MonoBehaviour
         if (col.CompareTag("Gift"))
         {
             Destroy(col.gameObject);
-            m_onpenGift.ShowPanelGift();
+            OpenGift og = GetComponent<OpenGift>();
+            Time.timeScale = 0;
+            panelSpin.SetActive(true);
             
         }
     }
