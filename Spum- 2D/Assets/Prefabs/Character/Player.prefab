@@ -3250,7 +3250,7 @@ GameObject:
   - component: {fileID: 2064995963530913075}
   m_Layer: 0
   m_Name: ShurikenSpawner
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3602,7 +3602,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6432208137253831773}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.418132, y: 0.40820616, z: 0}
+  m_LocalPosition: {x: -1.593741, y: 0.14, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3747,7 +3747,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hPBar: {fileID: 6090746323332441113}
   fxDead: {fileID: 3973073466755695825, guid: f3e620813aa3f9d4aa534b0bb9dfb1c6, type: 3}
-  health: 9999
+  health: 500
   currentHealth: 0
 --- !u!114 &6432208137253831760
 MonoBehaviour:

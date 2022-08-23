@@ -100,8 +100,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 8427219072188518418, guid: 96bfbb8f1a1f5e645bbb4ee97ac71b39, type: 3}
-  damage: 1
-  speed: 7
+  damage: 200
+  speed: 5
 --- !u!61 &3387941688537605697
 BoxCollider2D:
   m_ObjectHideFlags: 0

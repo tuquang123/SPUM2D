@@ -14,6 +14,7 @@ public class LevelPlayer : MonoBehaviour
     private void Start()
     {
         levelBar.UpdateLevelBar(exp, maxExp);
+        levelBar.UpdateLevelText(level);
     }
 
     private void Update()
@@ -29,7 +30,7 @@ public class LevelPlayer : MonoBehaviour
             level++;
             maxExp += 10;
             exp = 0;
-            
+            levelBar.UpdateLevelText(level);
             selectItemPanel.SetActive(true);
             Time.timeScale = 0;
         }
