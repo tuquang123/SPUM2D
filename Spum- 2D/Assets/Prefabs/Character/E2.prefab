@@ -2683,7 +2683,7 @@ MonoBehaviour:
   deathEffect: {fileID: 3973073466755695825, guid: f3e620813aa3f9d4aa534b0bb9dfb1c6, type: 3}
   attackEffect: {fileID: 3360738921439869729, guid: eb517a57eac4644c983c49953f73e8c4, type: 3}
   floatingDame: {fileID: 8084653580894143554, guid: b3bb6b2670f75514785d25e5e5019fef, type: 3}
-  health: 6
+  health: 400
 --- !u!114 &6567061267389186427
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2696,9 +2696,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b171756a491f45d09efa8829b0cd1a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.7
+  speed: 0.6
   target: {fileID: 6432208137253831770, guid: 9247e7f84d2224b3bb635bfd3cd6f6db, type: 3}
   minimumDistance: 1
+  HpPlayer: {fileID: 6432208137253831774, guid: 9247e7f84d2224b3bb635bfd3cd6f6db, type: 3}
   targetDir: {x: 0, y: 0, z: 0}
 --- !u!1 &6567061267321137376
 GameObject:

@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class OpenGift : MonoBehaviour
 {
-    [SerializeField] private GameObject m_gameObject;
+    //[SerializeField] private GameObject m_gameObject;
     [SerializeField] private GameObject m_panelGift;
     // Start is called before the first frame update
     private void Start()
     {
-        Instantiate(m_gameObject, m_panelGift.transform);
+        //Instantiate(m_gameObject, m_panelGift.transform);
     }
 
     public void ShowPanelGift()

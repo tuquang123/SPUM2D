@@ -19,7 +19,6 @@ public class EnemyManager : MonoBehaviour
 
     private float randx, randy;
     Vector2 whereToSpawn;
-    float nextSpawn = 0.0f;
 
     void Start()
     {
@@ -42,22 +41,35 @@ public class EnemyManager : MonoBehaviour
     {
         if (LevelPlayer.level >= 2)
         {
-            spawnRate = 0.45f;
+            spawnRate = 1f;
             Instantiate(listEnemy[Random.Range(0, 2)], whereToSpawn, Quaternion.identity, transform);
         }
         if (LevelPlayer.level >= 3)
         {
-            spawnRate = 0.4f;
             Instantiate(listEnemy[Random.Range(0, 3)], whereToSpawn, Quaternion.identity,transform);
+        }
+        if (LevelPlayer.level >= 4)
+        {
+            spawnRate = 0.9f;
+            Instantiate(listEnemy[Random.Range(0, 4)], whereToSpawn, Quaternion.identity,transform);
         }
         if (LevelPlayer.level >= 5)
         {
-            spawnRate = 0.35f;
-            Instantiate(listEnemy[Random.Range(0, 4)], whereToSpawn, Quaternion.identity,transform);
+            Instantiate(listEnemy[Random.Range(1, 5)], whereToSpawn, Quaternion.identity,transform);
         }
         if (LevelPlayer.level >= 6)
         {
-            Instantiate(listEnemy[Random.Range(1, 4)], whereToSpawn, Quaternion.identity,transform);
+            spawnRate = 0.8f;
+            Instantiate(listEnemy[Random.Range(1, 6)], whereToSpawn, Quaternion.identity, transform);
+        }
+        if (LevelPlayer.level >= 7)
+        {
+            Instantiate(listEnemy[Random.Range(2, 7)], whereToSpawn, Quaternion.identity, transform);
+        }
+        if (LevelPlayer.level >= 8)
+        {
+            spawnRate = 1.5f;
+            Instantiate(listEnemy[Random.Range(3, listEnemy.Length)], whereToSpawn, Quaternion.identity, transform);
         }
     }
 }
