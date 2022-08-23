@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -5,25 +6,29 @@ public class DrillSpawn : MonoBehaviour
 {
     [SerializeField] private GameObject _player;
     [SerializeField] private GameObject _drillPref;
-    private List<GameObject> _drills;
+    [SerializeField] private float _spawnTime;
 
+    private List<GameObject> _drills;
+    private float _timer;
     private void Start()
     {
-        transform.position = _player.transform.position;
+        //transform.position = _player.transform.position;
         _drills = new List<GameObject>();
-        Init();
     }
 
-    private void Init()
+    private void Update()
     {
-        //reset drill list
-        if (_drills.Count > 0)
+        if (_timer <= 0)
         {
-            foreach (var drill in _drills)
-            {
-                Destroy(drill.gameObject);
-            }
+            Spawn();
+            _timer = _spawnTime;
         }
+        _timer -= Time.deltaTime;
+        
+    }
+
+    private void Spawn()
+    {
         _drills.Clear();
         
         for (int i = 0; i < Inventory.Instance.drill; i++)

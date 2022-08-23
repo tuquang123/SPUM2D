@@ -23,7 +23,7 @@ public class Border : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D col)
     {
         Collider2D colider = this.GetComponent<Collider2D>();
-        colider.enabled = false;
+        col.collider.enabled = false;
         if(col.collider.gameObject.GetComponent<Drill>() != null)
         {
             if (_id == "X")
@@ -35,6 +35,6 @@ public class Border : MonoBehaviour
                 col.collider.gameObject.GetComponent<Drill>().FlipY();
             }
         }     
-        colider.enabled = true;
+        col.collider.enabled = true;
     }
 }
