@@ -17,11 +17,9 @@ public class Drill : MonoBehaviour
     }
     
 
-    private void FixedUpdate()
+    private void Update()
     {
-      
         transform.Translate(_currentDirection * _speed * Time.deltaTime);
-        
     }
     
     private void CalculateDirection()

@@ -41,7 +41,7 @@ public class AttackPlayer : MonoBehaviour
     void Shooting(GameObject prefab , Transform position)
     {
         var bul =  Instantiate(prefab, position.position, Quaternion.identity);
-        bul.transform.parent = gameObject.transform;
+        //bul.transform.parent = gameObject.transform;
         Debug.Log("shoot 1 bullet");
     }
 }

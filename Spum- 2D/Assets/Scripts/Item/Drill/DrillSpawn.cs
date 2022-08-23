@@ -4,16 +4,14 @@ using UnityEngine;
 public class DrillSpawn : MonoBehaviour
 {
     [SerializeField] private GameObject _player;
-    [SerializeField] private Drill _drillPref;
-    private List<Drill> _drills;
+    [SerializeField] private GameObject _drillPref;
+    private List<GameObject> _drills;
 
     private void Start()
     {
         transform.position = _player.transform.position;
-        _drills = new List<Drill>();
-        
+        _drills = new List<GameObject>();
         Init();
-                                
     }
 
     private void Init()
@@ -30,7 +28,7 @@ public class DrillSpawn : MonoBehaviour
         
         for (int i = 0; i < Inventory.Instance.drill; i++)
         { 
-            Drill drill = Instantiate(_drillPref, transform.position, Quaternion.identity, transform);
+            GameObject drill = Instantiate(_drillPref.gameObject, transform.position, Quaternion.identity, transform);
             _drills.Add(drill);
         }
     }
