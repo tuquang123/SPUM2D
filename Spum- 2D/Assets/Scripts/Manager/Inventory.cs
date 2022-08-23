@@ -22,6 +22,8 @@ public class Inventory : Singleton<Inventory>
     [Range(0,4)]
     public int suriken = 0;
     [Range(0,4)]
+    public int drill = 0;
+    [Range(0,4)]
     public int boomerang = 0;
     [Range(0,4)]
     public int boom = 0;
