@@ -16,6 +16,6 @@ public class LevelBar : MonoBehaviour
 
     public void UpdateLevelText(int level)
     {
-        levelText.text = level.ToString();
+        levelText.text = "Level: " + level.ToString();
     }
 }

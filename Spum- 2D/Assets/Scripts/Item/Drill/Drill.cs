@@ -19,7 +19,6 @@ public class Drill : MonoBehaviour
 
     private void Update()
     {
-        //transform.Rotate(0,0,-200);
         transform.Translate(_currentDirection * _speed * Time.deltaTime);
     }
     

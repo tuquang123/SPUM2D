@@ -33,7 +33,7 @@ public class DrillSpawn : MonoBehaviour
         
         for (int i = 0; i < Inventory.Instance.drill; i++)
         { 
-            GameObject drill = Instantiate(_drillPref.gameObject, transform.position, Quaternion.identity);
+            GameObject drill = Instantiate(_drillPref.gameObject, transform.position, Quaternion.identity, transform);
             _drills.Add(drill);
         }
     }

@@ -37,23 +37,4 @@ public class Border : MonoBehaviour
         }     
         col.collider.enabled = true;
     }
-
-    private void OnTriggerEnter2D(Collider2D col)
-    {
-        col.enabled = false;
-        if(col.gameObject.GetComponent<Drill>() != null)
-        {
-            if (_id == "X")
-            {
-                col.gameObject.GetComponent<Drill>().FlipX();
-            }
-            if (_id == "Y")
-            {
-                col.gameObject.GetComponent<Drill>().FlipY();
-            }
-        }     
-        col.enabled = true;
-    }
-
-    
 }
