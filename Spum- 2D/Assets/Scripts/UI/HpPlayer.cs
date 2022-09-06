@@ -15,15 +15,6 @@ public class HpPlayer : MonoBehaviour
         currentHealth = health;
         hPBar.SetMaxHealth(health);
     }
-
-    private void OnTriggerEnter2D(Collider2D col)
-    {
-        if (col.CompareTag("Enemy"))
-        {
-            TakeDamage(2);
-        }
-    }
-
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;

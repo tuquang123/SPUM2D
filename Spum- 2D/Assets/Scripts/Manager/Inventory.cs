@@ -19,9 +19,9 @@ public class Inventory : Singleton<Inventory>
     public int exp = 0;
     [Range(0,2)]
     public int darts = 0;
-    [Range(0,8)]
+    //[Range(0,8)]
     public int suriken = 0;
-    [Range(0,4)]
+    //[Range(0,10)]
     public int drill = 0;
     [Range(0,4)]
     public int boomerang = 0;

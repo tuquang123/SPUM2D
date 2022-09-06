@@ -14,7 +14,6 @@ public class Enemy : MonoBehaviour
     {
         target.transform.position = FindObjectOfType<MovePlayer>().transform.position;
     }
-
     private void FixedUpdate()
     {
         Turning();

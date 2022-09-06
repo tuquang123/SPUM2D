@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class HpEnemy : MonoBehaviour
 {
+	public int dame = 2;
 	public GameObject gem;
 	public GameObject deathEffect;
     public GameObject attackEffect;
@@ -20,7 +21,18 @@ public class HpEnemy : MonoBehaviour
 			Die();
 		}
 	}
-
+    private void OnTriggerEnter2D(Collider2D col)
+    {
+	    if(col.CompareTag("Player"))
+	    {
+		    HpPlayer enemy = col.GetComponent<HpPlayer>();
+		    if (enemy != null)
+		    {
+			    enemy.TakeDamage(dame);
+			    Die();
+		    }
+	    }
+    }
 	void ShowDame(string text)
     {
 		if(floatingDame)
