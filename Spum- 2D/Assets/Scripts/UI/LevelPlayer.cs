@@ -32,7 +32,7 @@ public class LevelPlayer : MonoBehaviour
             exp = 0;
             levelBar.UpdateLevelText(level);
             //selectItemPanel.SetActive(true);
-            Time.timeScale = 0;
+            //Time.timeScale = 0;
         }
     }
     //call to button 
