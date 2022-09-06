@@ -24,7 +24,6 @@ public class DrillSpawn : MonoBehaviour
             _timer = _spawnTime;
         }
         _timer -= Time.deltaTime;
-        
     }
 
     private void Spawn()

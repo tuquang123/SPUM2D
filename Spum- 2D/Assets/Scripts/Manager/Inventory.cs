@@ -23,10 +23,11 @@ public class Inventory : Singleton<Inventory>
     public int suriken = 0;
     //[Range(0,10)]
     public int drill = 0;
+    
     [Range(0,4)]
-    public int boomerang = 0;
+    public int rocket = 0;
     [Range(0,4)]
-    public int boom = 0;
+    public int boomFire = 0;
 
     public void AddSuriken()
     {
@@ -45,12 +46,12 @@ public class Inventory : Singleton<Inventory>
 
     public void AddBoom()
     {
-        boom++;
+        boomFire++;
     }
 
     public void AddBoomerang()
     {
-        boomerang++;
+        rocket++;
     }
     
 }
