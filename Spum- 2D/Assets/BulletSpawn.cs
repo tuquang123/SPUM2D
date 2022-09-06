@@ -5,7 +5,7 @@ using UnityEngine;
 public class BulletSpawn : MonoBehaviour
 {
     public float range = 0.1f;
-    public float angle = 0f;
+    private float angle = 0f;
     private void Start()
     {
         InvokeRepeating("Fire", 0f, range);

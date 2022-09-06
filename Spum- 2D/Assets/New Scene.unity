@@ -237,8 +237,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   poolBullet: {fileID: 4089109518161250927, guid: 17ec592e631a5f846a2eab97ff89ed51, type: 3}
-  notEnoghtBullet: 1
-  bullets: []
 --- !u!4 &1492978891
 Transform:
   m_ObjectHideFlags: 0
@@ -265,6 +263,7 @@ GameObject:
   - component: {fileID: 1689172178}
   - component: {fileID: 1689172177}
   - component: {fileID: 1689172176}
+  - component: {fileID: 1689172179}
   m_Layer: 0
   m_Name: Circle
   m_TagString: Untagged
@@ -279,12 +278,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1689172175}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f563dd368d7275744af0df2d476a2e76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  angle: 0
+  range: 0.1
 --- !u!212 &1689172177
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -352,3 +351,15 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1689172179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1689172175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 419da8e5a505d3642ad902e4295cf8d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
