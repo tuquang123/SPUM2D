@@ -31,7 +31,7 @@ public class LevelPlayer : MonoBehaviour
             maxExp += 10;
             exp = 0;
             levelBar.UpdateLevelText(level);
-            selectItemPanel.SetActive(true);
+            //selectItemPanel.SetActive(true);
             Time.timeScale = 0;
         }
     }
