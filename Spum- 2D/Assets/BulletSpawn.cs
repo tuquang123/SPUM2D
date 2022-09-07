@@ -26,4 +26,9 @@ public class BulletSpawn : MonoBehaviour
 
         angle += 10f;
     }
+
+    
 }
+
+
+   

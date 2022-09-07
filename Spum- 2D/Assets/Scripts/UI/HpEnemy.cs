@@ -14,7 +14,7 @@ public class HpEnemy : MonoBehaviour
     public void TakeDamage(int damage)
 	{
 		ShowDame(damage.ToString());
-        Instantiate(attackEffect, transform.position, Quaternion.identity);
+        //Instantiate(attackEffect, transform.position, Quaternion.identity);
         health -= damage;
 		if (health <= 0)
 		{
@@ -45,6 +45,7 @@ public class HpEnemy : MonoBehaviour
 	{
 		Instantiate(deathEffect, transform.position, Quaternion.identity);
 		Instantiate(gem, transform.position, Quaternion.identity);
-		Destroy(gameObject);
+		//Destroy(gameObject);
+		gameObject.SetActive(false);
 	}
 }

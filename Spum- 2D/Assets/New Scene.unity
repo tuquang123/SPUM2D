@@ -245,7 +245,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1492978889}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.10759877, y: 0.009503484, z: -0.0006571886}
+  m_LocalPosition: {x: 1.85, y: 0.009503484, z: -0.0006571886}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -264,6 +264,7 @@ GameObject:
   - component: {fileID: 1689172177}
   - component: {fileID: 1689172176}
   - component: {fileID: 1689172179}
+  - component: {fileID: 1689172180}
   m_Layer: 0
   m_Name: Circle
   m_TagString: Untagged
@@ -344,7 +345,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1689172175}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 2.03, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -358,8 +359,25 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1689172175}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 419da8e5a505d3642ad902e4295cf8d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rage: 0.1
+--- !u!114 &1689172180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1689172175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32b030f97ced76d4db28ef23d1a5974a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  number: 2
+  bulletPref: {fileID: 4089109518161250927, guid: 17ec592e631a5f846a2eab97ff89ed51, type: 3}
+  radius: 5
+  mospeed: 5
