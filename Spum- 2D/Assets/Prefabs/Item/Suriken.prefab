@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7421917690354229779}
   - component: {fileID: 7421917690354229776}
   - component: {fileID: 3459288731070428876}
+  - component: {fileID: 3114900986594143233}
   m_Layer: 0
   m_Name: Suriken
   m_TagString: Untagged
@@ -116,7 +117,7 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.512945, y: 0.50000006}
     oldSize: {x: 0.51, y: 0.51}
     newSize: {x: 0.51, y: 0.51}
     adaptiveTilingThreshold: 0.5
@@ -243,3 +244,16 @@ TrailRenderer:
   m_MinVertexDistance: 0.1
   m_Autodestruct: 0
   m_Emitting: 1
+--- !u!114 &3114900986594143233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7421917690354229772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db3b8124f6b2f4e24a41f4dde2062395, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotateZ: 20
