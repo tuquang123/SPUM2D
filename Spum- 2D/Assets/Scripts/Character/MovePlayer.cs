@@ -21,7 +21,7 @@ public class MovePlayer : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rb.MovePosition(rb.position + movement * ((speed + Inventory.Instance.shoes) * Time.fixedDeltaTime));
+        rb.MovePosition(rb.position + movement * ((speed + Inventory.Instance.speed) * Time.fixedDeltaTime));
         if (movement.x > 0 && !facingRight)
         {
             Flip();

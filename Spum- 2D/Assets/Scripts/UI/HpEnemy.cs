@@ -5,9 +5,9 @@ using UnityEngine;
 public class HpEnemy : MonoBehaviour
 {
 	public int dame = 2;
-	public GameObject gem;
+	//public GameObject gem;
 	public GameObject deathEffect;
-    public GameObject attackEffect;
+    //public GameObject attackEffect;
     public GameObject floatingDame;
 	public int health;
 
@@ -44,7 +44,7 @@ public class HpEnemy : MonoBehaviour
 	void Die()
 	{
 		Instantiate(deathEffect, transform.position, Quaternion.identity);
-		Instantiate(gem, transform.position, Quaternion.identity);
+		//Instantiate(gem, transform.position, Quaternion.identity);
 		//Destroy(gameObject);
 		gameObject.SetActive(false);
 	}

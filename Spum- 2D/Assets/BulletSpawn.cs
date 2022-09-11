@@ -8,7 +8,7 @@ public class BulletSpawn : MonoBehaviour
     private float angle = 0f;
     private void Start()
     {
-        InvokeRepeating("Fire", 0f, range);
+        InvokeRepeating("Fire", 0f, range); //Inventory.Instance.x2Bullet/10);
     }
     public void Fire()
     {

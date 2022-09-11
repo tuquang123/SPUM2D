@@ -8,18 +8,21 @@ public class Bullet : MonoBehaviour
 {
     public GameObject bullet;
     public int damage;
-    private Vector3 targetPosition;
+    private Transform targetPosition;
     public float speed;
     
     private void Start()
     {
-        targetPosition = FindObjectOfType<HpEnemy>().transform.position;
+        //Destroy(gameObject, 3);
+        targetPosition = FindTarget.instance.target;
+        //targetPosition = FindObjectOfType<HpEnemy>().transform.position;
     }
     private void Update()
     {
+        if (targetPosition == null) return;
         transform.position =
-            Vector2.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);
-        if(targetPosition == transform.position)
+            Vector2.MoveTowards(transform.position, targetPosition.position, speed * Time.deltaTime);
+        if(targetPosition.position == transform.position)
         {
             Destroy(gameObject);
         }

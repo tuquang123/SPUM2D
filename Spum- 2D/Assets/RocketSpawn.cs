@@ -29,7 +29,7 @@ public class RocketSpawn : MonoBehaviour
     {
         _drills.Clear();
         
-        for (int i = 0; i < Inventory.Instance.boomFire; i++)
+        for (int i = 0; i < Inventory.Instance.rocket2; i++)
         { 
             GameObject drill = Instantiate(_drillPref.gameObject, transform.position, Quaternion.identity);
             _drills.Add(drill);

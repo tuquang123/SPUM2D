@@ -6,20 +6,20 @@ public class Boomerang : MonoBehaviour
 {
     public GameObject bullet;
     public int damage;
-    private Transform targetPosition;
+    private Vector3 targetPosition;
     public float speed;
     
     private void Start()
     {
-        targetPosition = FindTarget.instance.target;
-        //targetPosition = FindObjectOfType<HpEnemy>().transform.position;
+        //targetPosition = FindTarget.instance.target;
+        targetPosition = FindObjectOfType<HpEnemy>().transform.position;
     }
     private void Update()
     {
         if(targetPosition == null) return;
         transform.position =
-            Vector2.MoveTowards(transform.position, targetPosition.position, speed * Time.deltaTime);
-        if(targetPosition.position == transform.position)
+            Vector2.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);
+        if(targetPosition == transform.position)
         {
             //Destroy(gameObject);
             speed = 0;

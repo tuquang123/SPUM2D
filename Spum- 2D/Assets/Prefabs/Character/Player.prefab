@@ -6302,14 +6302,12 @@ GameObject:
   - component: {fileID: 6432208137253831761}
   - component: {fileID: 6432208137253831774}
   - component: {fileID: 6432208137253831760}
-  - component: {fileID: 3530797231091716749}
   - component: {fileID: 6432208136383333025}
   - component: {fileID: 7619002495877542410}
   - component: {fileID: 7619002495877542398}
   - component: {fileID: 7619002495877542399}
   - component: {fileID: 7619002495877542400}
   - component: {fileID: 7619002495877542411}
-  - component: {fileID: 7619002495877542412}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -6325,7 +6323,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6432208137253831773}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.167998, y: -1.7399993, z: 0}
+  m_LocalPosition: {x: -2.528, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6488,27 +6486,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4baa885513edfca48bb92442972e07c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pointShot2: {fileID: 3530797231401610321}
-  finalBullet: {fileID: 1197776148149278193, guid: 9c43a1f74534745f3a95e9ff7e96ecbf, type: 3}
   bullet: {fileID: 4089109518161250927, guid: 6d6e83c7213f34b4ba6eaa7a06518b4e, type: 3}
-  attackRate: 1
---- !u!114 &3530797231091716749
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6432208137253831773}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 18bf64fa4ee42405ab8e176feecfd984, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  selectItemPanel: {fileID: 0}
-  levelBar: {fileID: 0}
-  level: 1
-  maxExp: 5
-  exp: 0
 --- !u!114 &6432208136383333025
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6521,7 +6499,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9e58ab53bb214435ad58e4cb6f94329, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  panelSpin: {fileID: 0}
 --- !u!114 &7619002495877542410
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6576,7 +6553,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32b030f97ced76d4db28ef23d1a5974a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  number: 5
   bulletPref: {fileID: 4089109518161250927, guid: 17ec592e631a5f846a2eab97ff89ed51, type: 3}
   radius: 5
   mospeed: 3
@@ -6594,21 +6570,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 4089109518161250927, guid: 6d6e83c7213f34b4ba6eaa7a06518b4e, type: 3}
-  attackRate: 2
---- !u!114 &7619002495877542412
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6432208137253831773}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec677b1949862164b9be7f771364369e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bullet: {fileID: 1197776148149278193, guid: 8c42b80ad34a5cb4cae8a69f5b6dfe3a, type: 3}
-  attackRate: 2
 --- !u!1 &6432208137381401487
 GameObject:
   m_ObjectHideFlags: 0

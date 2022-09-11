@@ -29,7 +29,7 @@ public class LuckySpin : MonoBehaviour
             
             m_pickerWheel.Spin();
             
-            m_pickerWheel.OnSpinEnd( wheelPiece =>
+            /*m_pickerWheel.OnSpinEnd( wheelPiece =>
             {
                 
                 Debug.Log("Spin endd: Label: "+ wheelPiece.Label);
@@ -53,7 +53,7 @@ public class LuckySpin : MonoBehaviour
             }
 
             m_openGift.ClosePanelGift();
-            });
+            });*/
             
         });
     }

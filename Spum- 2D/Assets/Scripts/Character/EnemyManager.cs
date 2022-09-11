@@ -54,12 +54,12 @@ public class EnemyManager : MonoBehaviour
         whereToSpawn = new Vector2(randx, randy);
         var newEnemy = Instantiate(listBoth[0], whereToSpawn, Quaternion.identity);
         StartCoroutine(SpawnPositionEnemy(listBoth, spawnRate));
-        SpawnEnemy();
+        //SpawnEnemy();
         objects.Add(newEnemy.transform);
         
     }
 
-    void SpawnEnemy()
+    /*void SpawnEnemy()
     {
         if (LevelPlayer.level >= 2)
         {
@@ -99,5 +99,5 @@ public class EnemyManager : MonoBehaviour
             var newEnemy = Instantiate(listEnemy[Random.Range(3, listEnemy.Length)], whereToSpawn, Quaternion.identity, transform);
             objects.Add(newEnemy.transform);
         }
-    }
+    }*/
 }

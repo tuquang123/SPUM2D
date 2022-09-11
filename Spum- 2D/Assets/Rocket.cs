@@ -19,7 +19,7 @@ public class Rocket : MonoBehaviour
 		target = FindTarget.instance.target;
 		rb = GetComponent<Rigidbody2D>();
 		//target = GameObject.FindGameObjectWithTag("Enemy").transform;
-		//Destroy(gameObject, 3f);
+		Destroy(gameObject, 10f);
 	}
 
 	void FixedUpdate()
@@ -43,6 +43,7 @@ public class Rocket : MonoBehaviour
 		if (other.CompareTag("Enemy"))
 		{
 			HpEnemy enemy = other.GetComponent<HpEnemy>();
+
 			if (enemy != null)
 			{
 				enemy.TakeDamage(dame);

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SpawnDir : MonoBehaviour
 {
-    public int number;
+    //public int number;
     public GameObject bulletPref;
     //Vector2 transform;
 
@@ -17,7 +17,10 @@ public class SpawnDir : MonoBehaviour
         if (Time.time >= nextAttackTime)
         {
             nextAttackTime = Time.time + 1f / attackRate;
-            Spawn(number);
+            if (Inventory.Instance.radiate >= 1)
+            {
+                Spawn(Inventory.Instance.radiate + 1);
+            }
         }
 
     }

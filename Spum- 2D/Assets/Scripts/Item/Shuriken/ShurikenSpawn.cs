@@ -78,9 +78,9 @@ public class ShurikenSpawn : MonoBehaviour
     {
         ClearShuriken(); 
 
-        var myAngleInDegrees = 360 /Inventory.Instance.suriken;
+        var myAngleInDegrees = 360 /Inventory.Instance.shuriken;
         
-        for (int i = 0; i < Inventory.Instance.suriken; i++)
+        for (int i = 0; i < Inventory.Instance.shuriken; i++)
         {
             var angle = myAngleInDegrees * i;
             var sinOfAngle = Mathf.Sin((angle * Mathf.PI)/180);
@@ -105,7 +105,7 @@ public class ShurikenSpawn : MonoBehaviour
 
     public void AddShuriken()
     {
-        Inventory.Instance.suriken++;
+        Inventory.Instance.shuriken++;
         Init();
     }
         

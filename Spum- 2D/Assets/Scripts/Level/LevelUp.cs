@@ -46,8 +46,8 @@ public class LevelUp : MonoBehaviour
 
     private void ClickItemLevelUp(RandomItemLevelUp randomItemLevelUp)
     {
-        
-        if (randomItemLevelUp.GetName().Equals("Suriken") )
+
+        /*if (randomItemLevelUp.GetName().Equals("Suriken") )
         {
             Inventory.Instance.AddSuriken();
         }else if (randomItemLevelUp.GetName().Equals("Bom"))
@@ -65,8 +65,8 @@ public class LevelUp : MonoBehaviour
             Inventory.Instance.AddShoes();
         }
         m_levelPlayer.ContinueGame();
+    }*/
     }
-
     private void OnEnable()
     {
         RandomItemLevelUp.OnClickItem += ClickItemLevelUp;

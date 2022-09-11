@@ -14,12 +14,12 @@ public class Shuriken : MonoBehaviour
     //call when button click
     public void AddShuriken()
     {
-        Inventory.Instance.suriken++;
+        Inventory.Instance.shuriken++;
         CheckShuriken();
     }
     public void CheckShuriken()
     {
-        for (int i = 0; i < Inventory.Instance.suriken; i++)
+        for (int i = 0; i < Inventory.Instance.shuriken; i++)
         {
             shuriken[i].SetActive(true);
         }
