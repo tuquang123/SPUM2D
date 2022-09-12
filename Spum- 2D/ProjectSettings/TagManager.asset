@@ -5,11 +5,22 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy
-  - Gem
   - Gold
   - Hp
   - Gift
   - Screnn
+  - speed
+  - speedAttack
+  - drill
+  - rocket2
+  - shuriken
+  - radiate
+  - speedAttackBasic
+  - speedAttackThunder
+  - AttackSpeedSaw
+  - book
+  - boom
+  - Gem
   layers:
   - Default
   - TransparentFX

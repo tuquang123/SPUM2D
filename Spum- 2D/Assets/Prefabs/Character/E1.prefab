@@ -3589,11 +3589,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be280542b28446a49aff1ebbf4e651dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gem: {fileID: 4671354774057595117, guid: 2f7f28c9cf02e40f99b1d0bf97892e09, type: 3}
+  dame: 2
   deathEffect: {fileID: 3973073466755695825, guid: f3e620813aa3f9d4aa534b0bb9dfb1c6, type: 3}
-  attackEffect: {fileID: 3360738921439869729, guid: eb517a57eac4644c983c49953f73e8c4, type: 3}
   floatingDame: {fileID: 8084653580894143554, guid: b3bb6b2670f75514785d25e5e5019fef, type: 3}
-  health: 200
+  health: 1000
 --- !u!50 &8319013307372286309
 Rigidbody2D:
   serializedVersion: 4
@@ -3630,8 +3629,6 @@ MonoBehaviour:
   speed: 0.5
   target: {fileID: 6432208137253831770, guid: 9247e7f84d2224b3bb635bfd3cd6f6db, type: 3}
   minimumDistance: 1
-  HpPlayer: {fileID: 6432208137253831774, guid: 9247e7f84d2224b3bb635bfd3cd6f6db, type: 3}
-  Player: {fileID: 0}
   targetDir: {x: 0, y: 0, z: 0}
 --- !u!1 &7633702889333158171
 GameObject:
